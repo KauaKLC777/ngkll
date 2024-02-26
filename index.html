@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria Gorillas</title>
+    <style>
+        /* Estilos adicionais para o menu */
+        #menu-lateral {
+            position: absolute; /* Adiciona posição absoluta para que possamos movê-lo livremente */
+            top: 0; /* Alinha o menu ao topo */
+            right: 0; /* Alinha o menu à direita */
+            padding: 5px;
+        }
+        #menu-lateral ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #menu-lateral ul li {
+            margin-bottom: 1px;
+        }
+        #menu-lateral ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Adiciona margem superior ao cabeçalho para evitar sobreposição */
+        header {
+            margin-top: 20px; /* Ajuste conforme necessário */
+            position: relative; /* Adiciona posição relativa para que a margem superior funcione */
+        }
+
+        /* Estilos para os sabores de pizza */
+        .categoria ul {
+            padding-left: 20px; /* Adiciona um recuo para os itens da lista */
+        }
+
+        .categoria ul li {
+            font-size: 18px; /* Tamanho da fonte */
+            margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+            transition: color 0.3s ease; /* Adiciona transição de cor para animação ao passar o mouse */
+        }
+
+        .categoria ul li a {
+            text-decoration: none;
+            color: inherit; /* Herda a cor do pai */
+        }
+
+        .categoria ul li:hover {
+            color: #FF5733; /* Altera a cor ao passar o mouse para destacar */
+        }
+
+        /* Estilo para a imagem */
+        #gorillas-image {
+            position: absolute;
+            top: 0;
+            left: 0; /* Posiciona a imagem no lado esquerdo */
+            max-width: 120px; /* Define a largura máxima da imagem */
+            /* Adicione outras propriedades de estilo conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menu-lateral">
+            <li><a href="menu.html">MENU</a></li>
+            
+            <ul>
+                <li><a href="#menu">Ver Cardápio</a></li>
+                <!-- Adicione mais itens de menu conforme necessário -->
+            </ul>
+        </div>
+        <h1>Pizzaria Gorillas</h1>
+    </header>
+
+    <section id="menu">
+        <h2>Cardápio de Pizzas</h2>
+
+        <div class="categoria">
+            <h3>Pizzas Salgadas</h3>
+            <ul>
+                <!-- Lista de 15 sabores de pizzas salgadas -->
+                <li><a href="margherita.html">Margherita</a><a href="#">🍕</a></li>
+                <li><a href="calabresa.html">Calabresa</a><a href="#">🍕</a></li>
+                <li><a href="quatro-queijos.html">Quatro Queijos</a><a href="#">🍕</a></li>
+                <li><a href="pepperoni.html">Pepperoni</a><a href="#">🍕</a></li>
+                <li><a href="frango-com-catupiry.html">Frango com Catupiry</a><a href="#">🍕</a></li>
+                <li><a href="portuguesa.html">Portuguesa</a><a href="#">🍕</a></li>
+                <li><a href="vegetariana.html">Vegetariana</a><a href="#">🍕</a></li>
+                <li><a href="bacon-com-milho.html">Bacon com Milho</a><a href="#">🍕</a></li>
+                <li><a href="atum-com-cebola.html">Atum com Cebola</a><a href="#">🍕</a></li>
+                <li><a href="pesto-com-tomate-seco.html">Pesto com Tomate Seco</a><a href="#">🍕</a></li>
+                <li><a href="rucula-com-tomate-cereja.html">Rúcula com Tomate Cereja</a><a href="#">🍕</a></li>
+                <li><a href="caprese.html">Caprese</a><a href="#">🍕</a></li>
+                <li><a href="carne-seca-com-cream-cheese.html">Carne Seca com Cream Cheese</a><a href="#">🍕</a></li>
+                <li><a href="brocolis-com-alho.html">Brócolis com Alho</a><a href="#">🍕</a></li>
+                <li><a href="palmito-com-azeitona.html">Palmito com Azeitonas</a><a href="#">🍕</a></li>
+                <!-- Adicione os outros sabores de pizzas salgadas aqui -->
+            </ul>
+        </div>
+
+        <div class="categoria">
+            <h3>Pizzas Doces</h3>
+            <ul>
+                <li><a href="chocolate-com-morango.html">Chocolate com Morango</a><a href="#">🍕</a></li>
+                <li><a href="banana-caramelisada.html">Banana Caramelada</a><a href="#">🍕</a></li>
+                <li><a href="frutas-vermelhas.html">Frutas Vermelhas</a><a href="#">🍕</a></li>
+                <li><a href="doce-de-leite-com-amendoas.html">Doce de Leite com Amêndoas</a><a href="#">🍕</a></li>
+                <li><a href="brigadeiro-gormet.html">Brigadeiro Gourmet</a><a href="#">🍕</a></li>
+                <li><a href="romeu-e-julieta.html">Romeu e Julieta</a><a href="#">🍕</a></li>
+                <li><a href="creme-de-avelã-com-morango.html">Creme de Avelã com Morango</a><a href="#">🍕</a></li>
+                <li><a href="paçoca-com-leite-condensado.html">Paçoca e Leite Condensado</a><a href="#">🍕</a></li>
+                <li><a href="abacaxi-com-coco.html">Abacaxi com Coco</a><a href="#">🍕</a></li>
+                <li><a href="chocolate-branco-com-pistache.html">Chocolate Branco com Pistache</a><a href="#">🍕</a></li>
+                <li><a href="maça-com-canela.html">Maçã com Canela</a><a href="#">🍕</a></li>
+                <li><a href="mousse-de-maracujá.html">Mousse de Maracujá</a><a href="#">🍕</a></li>
+                <li><a href="limão-com-merengue.html">Limão com Merengue</a><a href="#">🍕</a></li>
+                <li><a href="amendoim-e-chocolate.html">Amendoim e Chocolate</a><a href="#">🍕</a></li>
+                <li><a href="morango-com-nutella.html">Morango com Nutella</a><a href="#">🍕</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Adicionando a imagem gorillas.html -->
+    <img src="gorillas.jpg" id="gorillas-image" alt="Gorillas Image">
+
+
+    
+</body>
+</html>

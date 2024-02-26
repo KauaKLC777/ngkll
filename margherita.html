@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Pizza</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('marguerita.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .pizza-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .pizza-image {
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .pizza-details {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ff5500;
+        }
+
+        p {
+            color: #555;
+            margin: 10px 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #ff5500;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e04400;
+        }
+    </style>
+</head>
+<body>
+    <div class="pizza-card">
+        <img class="pizza-image" src="marguerita.jpg" alt="Pizza Especial">
+        <div class="pizza-details">
+            <h2>Tamanhos (P) (M) (G) (GG)</h2>
+            <h2>Pizza Especial</h2>
+            <p><strong>Valor:</strong> P: R$ 20,00; M: R$ 25,00; G: R$ 30,00; GG: R$ 35,00.</p>
+            <p><strong>Descrição:</strong> Uma deliciosa pizza feita com ingredientes frescos e selecionados.</p>
+
+            <form action="cliente.html" method="get">
+                <label for="tamanho">Escolha o tamanho:</label>
+                <select id="tamanho" name="tamanho">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+                <button type="submit">Finalizar Pedido</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

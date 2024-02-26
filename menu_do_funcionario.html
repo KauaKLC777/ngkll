@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funcionário Detectado</title>
+<style>
+    body {
+        background-color: rgb(11, 180, 172); /* Define o fundo azul */
+        color: white; /* Define a cor do texto como branco */
+        font-family: Arial, sans-serif; /* Define a fonte */
+        text-align: center; /* Centraliza o texto */
+        padding-top: 100px; /* Adiciona um espaçamento superior para centralizar verticalmente */
+    }
+    h1 {
+        font-size: 48px; /* Define o tamanho do texto */
+    }
+    .btn {
+        background-color: #4CAF50; /* cor de fundo verde */
+        border: none; /* sem borda */
+        color: white; /* texto branco */
+        padding: 15px 32px; /* preenchimento */
+        text-align: center; /* alinhamento do texto */
+        text-decoration: none; /* sem decoração de texto */
+        display: inline-block; /* exibe como elemento em linha */
+        font-size: 16px; /* tamanho do texto */
+        margin-top: 20px; /* margem superior */
+        cursor: pointer; /* cursor muda para mão quando passa sobre o botão */
+    }
+</style>
+</head>
+<body>
+    <h1>Funcionário Detectado com Sucesso</h1>
+    <button class="btn" id="btnIniciarExpediente">Iniciar Expediente</button>
+
+    <script>
+        // Adiciona um listener de evento para o clique do botão
+        document.getElementById("btnIniciarExpediente").addEventListener("click", function() {
+            // Coloque aqui o código que deseja executar quando o botão for clicado
+            alert("Expediente iniciado!");
+        });
+    </script>
+</body>
+</html>

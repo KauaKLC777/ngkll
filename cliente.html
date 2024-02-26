@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: rgba(244, 244, 244, 0.9); /* Adicionando a cor de fundo com opacidade */
+            background-image: url('gorillas.png'); /* Adicionando a imagem de fundo */
+            background-repeat: no-repeat;
+            background-size: 100% 165%; /* Ajuste para cobrir completamente o fundo */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #ffffff; /* Cor de fundo do formulário */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333333; /* Cor do texto dos títulos */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555; /* Cor do texto das etiquetas */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #cccccc; /* Cor da borda dos campos de entrada */
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Finalizar Pedido</h1>
+
+    <!-- Formulário de Registro do Cliente -->
+    <h2>Informações do Cliente</h2>
+    <form id="customerForm">
+        <label for="customerName">Nome:</label>
+        <input type="text" id="customerName" name="customerName" required>
+
+        <label for="customerAddress">Endereço de Entrega:</label>
+        <input type="text" id="customerAddress" name="customerAddress" required>
+
+        <label for="customerPhone">Telefone:</label>
+        <input type="text" id="customerPhone" name="customerPhone" required>
+
+        <button type="button" onclick="finalizarPedido()">Finalizar Pedido</button>
+    </form>
+
+    <script>
+        function finalizarPedido() {
+            var customerName = document.getElementById('customerName').value;
+            var customerAddress = document.getElementById('customerAddress').value;
+            var customerPhone = document.getElementById('customerPhone').value;
+
+            alert("Pedido Finalizado!\n\nCliente: " + customerName + "\nEndereço de Entrega: " + customerAddress + "\nTelefone: " + customerPhone);
+
+            // Aqui você pode adicionar a lógica para enviar as informações ao backend, redirecionar, etc.
+        }
+    </script>
+
+</body>
+</html>
